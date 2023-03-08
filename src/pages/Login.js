@@ -3,7 +3,7 @@ import ElementUtils from '../utils/ElementUtils';
 class Login {
 
   open() {
-    browser.url('login');
+    browser.url('https://www.google.com');
     return this;
   }
 
