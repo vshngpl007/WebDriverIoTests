@@ -6,6 +6,6 @@ describe('Login', () => {
     browser.url('https://www.google.com');
     var title = browser.getTitle();
     console.log(title);
-     expect(title).toHaveText('Google');
+    expect(title).toHaveText('Google');
   });
 });
