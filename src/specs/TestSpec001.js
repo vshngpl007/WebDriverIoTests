@@ -1,5 +1,5 @@
-import LoginPage from '../pages/Login';
-import { expect } from 'chai';
+//import LoginPage from '../pages/Login';
+//import { expect } from 'chai';
 
 describe('Login', () => {
   it('should login successfully', () => {
