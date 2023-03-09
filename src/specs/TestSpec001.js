@@ -4,7 +4,7 @@
 describe('Login', () => {
   it('should login successfully', () => {
     browser.url('https://www.google.com');
-    var title = browser.getTitle()
+    var title = browser.getTitle();
     console.log(title);
   });
 });
