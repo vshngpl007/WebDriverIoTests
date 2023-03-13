@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 
 orbs:
   browser-tools: circleci/browser-tools@1.2.3
@@ -9,7 +9,7 @@ jobs:
       - image: cimg/node:16.19.0-browsers
     steps:
       - checkout
-      - browser-tools/install-chrome
+      - browser-tools/install-chromedriver
       - run:
           name: Make Report Directory
           command: mkdir report
