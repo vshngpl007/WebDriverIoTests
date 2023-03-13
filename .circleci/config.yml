@@ -9,18 +9,13 @@ jobs:
       - image: cimg/node:16.19.0-browsers
     steps:
       - checkout
-      - browser-tools/install-chromedriver
+      - run: mkdir test-reports
       - run:
-          command: |
-            google-chrome --version
-            chromedriver --version
-          name: Check install
-      - run:
-          name: Download Selenium Standalone Server
+          name: Download Selenium
           command: curl -O http://selenium-release.storage.googleapis.com/3.5/selenium-server-standalone-3.5.3.jar
       - run:
-          name: Start Selenium Standalone Server
-          command: java -jar selenium-server-standalone-3.5.3.jar -log report/selenium.log
+          name: Start Selenium
+          command: java -jar selenium-server-standalone-3.5.3.jar -log test-reports/selenium.log
           background: true
       - run:
           name: Install Node Modules
